@@ -9,20 +9,20 @@ int main(void)
 
 start: 
 
-	printf("Input The Starting Amount\n"); 
+	printf("Input The Starting Amount.\n"); 
 	scanf_s("%lf", &amount1); 
 
 	if (amount1 < 0) 
 	{ 
-		printf("error, negative number\n\n\n", amount1); 
+		printf("error, negative number.\n\n\n", amount1); 
 		goto start; 
 	} 
-	printf("Input Year For Starting Amount\n"); 
+	printf("Input Year For Starting Amount.\n"); 
 	scanf_s("%d", &year1); 
 
     	if (year1 < 2000) 
     { 
-		printf("Invalid Years Input Different Years\n\n\n"); 
+		printf("Invalid Years Input Different Years.\n\n\n"); 
 		goto start;//restarts program if year is less than 2000.  
 
 	} 
@@ -33,14 +33,14 @@ start:
     //restarts program if year is less than 2000.
 	if (year2 >= 2025) 
     { 
-		printf("Invalid Years Input Different Years\n\n\n"); 
+		printf("Invalid Years Input Different Years.\n\n\n"); 
 		goto start;  
 	} 
 
     //restarts program unless the years have are at least one year apart and non negative. 
 	if ( year2 - year1 < 0) 
     { 
-		printf("Invalid Years Input Different Years\n\n\n"); 
+		printf("Invalid Years Input Different Years.\n\n\n"); 
 		goto start; 
 	} 
 	else { 
