@@ -26,7 +26,6 @@ start:
     { 
 		printf("Invalid Years Input Different Years.\n\n\n"); 
 		goto start;
-
 	} 
 
 	printf("Input The Output Year\n"); 
