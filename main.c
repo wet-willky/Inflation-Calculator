@@ -12,6 +12,7 @@ start:
 	printf("Input The Starting Amount.\n"); 
 	scanf_s("%lf", &amount1); 
 
+	//restarts the program if it is a negative amount input.
 	if (amount1 < 0) 
 	{ 
 		printf("error, negative number.\n\n\n", amount1); 
@@ -20,10 +21,11 @@ start:
 	printf("Input Year For Starting Amount.\n"); 
 	scanf_s("%d", &year1); 
 
-    	if (year1 < 2000) 
+	//restarts program if year is less than 2000.  
+    if (year1 < 2000) 
     { 
 		printf("Invalid Years Input Different Years.\n\n\n"); 
-		goto start;//restarts program if year is less than 2000.  
+		goto start;
 
 	} 
 
@@ -58,9 +60,3 @@ start:
 		goto start; 
 	} 
 } 
-
- 
-
- 
-
- 
