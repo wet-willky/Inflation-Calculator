@@ -46,12 +46,10 @@ start:
 		goto start;
 	}
 	else {
-		int k = year1 - 2000;
-
 		//will repeat increasing the amount by the inflation amount until it reaches the year difference.  
-		for (int i = 1; i <= year2 - year1; i++)
+		for (int i = year1 - 2000; i <= year2 - 2000; i++)
 		{
-			amount1 = amount1 + amount1 * inflation[k];
+			amount1 = amount1 + amount1 * inflation[i];
 			k++;
 		}
 
