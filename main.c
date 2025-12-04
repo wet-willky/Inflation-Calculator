@@ -50,7 +50,6 @@ start:
 		for (int i = year1 - 2000; i <= year2 - 2000; i++)
 		{
 			amount1 = amount1 + amount1 * inflation[i];
-			k++;
 		}
 
 		printf("The Value After Inflation Is: %.2lf\n", amount1);
